@@ -8,5 +8,7 @@ int main(void) {
         printf("%d -> %d \n", _tmp[i].index, _tmp[i].p_index);
     }
 
+
+
     return 0;
 }
