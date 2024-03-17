@@ -3,4 +3,6 @@ project(solitaire_c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(solitaire_c main.c)
+add_executable(solitaire_c main.c
+        utils.c
+        utils.h)
