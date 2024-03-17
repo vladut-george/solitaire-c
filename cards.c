@@ -23,7 +23,7 @@ deck generateDeck(const char _suits[], unsigned int _suits_l, const char _number
 
     for(unsigned int i = 0; i < _suits_l; ++i)
         for(unsigned int j = 0; j < _numbers_l; ++j)
-            _result[i * _numbers_l + j - 1] = generateCard(_suits[i], _numbers[j]);
+            _result[i * _numbers_l + j] = generateCard(_suits[i], _numbers[j]);
 
     return _result;
 }

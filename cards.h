@@ -15,11 +15,7 @@ struct card {
 
 typedef struct card* deck;
 
-const char suits[] = {'c'/*clubs*/, 'd'/*diamonds*/, 'h'/*hearts*/, 's'/*spades*/};
-const unsigned int suits_l = 4;
 
-const char numbers[] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'J', 'Q', 'K'};
-const unsigned int numbers_l = 13;
 
 
 struct card generateCard(char _suit, char _number);
