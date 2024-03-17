@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(solitaire_c main.c
         utils.c
-        utils.h)
+        utils.h
+        cards.c
+        cards.h)
