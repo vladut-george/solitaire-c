@@ -27,3 +27,13 @@ deck generateDeck(const char _suits[], unsigned int _suits_l, const char _number
 
     return _result;
 }
+
+deck shuffleDeck(deck _to_shuffle, permutation _shuffle, int _length) {
+    for(unsigned int i = 0; i < _length; ++i) {
+        struct card _tmp = _to_shuffle[i];
+        _to_shuffle[i] = _to_shuffle[_shuffle[i].p_index];
+        _to_shuffle[_shuffle[i].p_index] = _tmp;
+    }
+
+    return _shuffle;
+}

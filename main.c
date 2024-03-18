@@ -10,17 +10,14 @@ const unsigned int numbers_l = 13;
 
 
 int main(void) {
-    /*permutation _tmp = generatePermutation(52);
-
-    for(unsigned int i = 0; i < 52; i++) {
-        printf("%d -> %d \n", _tmp[i].index, _tmp[i].p_index);
-    }*/
-
-
+    permutation _shuffle = generatePermutation(52);
     deck _tmp = generateDeck(suits, suits_l, numbers, numbers_l);
+    shuffleDeck(_tmp, _shuffle, 52);
 
     for (unsigned int i = 0; i < 52; i++)
         printf("%s ", _tmp[i].display);
+
+
 
     return 0;
 }

@@ -15,14 +15,11 @@ struct card {
 
 typedef struct card* deck;
 
-
-
-
 struct card generateCard(char _suit, char _number);
 
 deck generateDeck(const char _suits[], unsigned int _suits_l, const char _numbers[], unsigned int _numbers_l);
 
 //_shuffle should be generate with generatePermutation of the length of the deck;
-deck shuffleDeck(deck _to_shuffle, permutation _shuffle);
+deck shuffleDeck(deck _to_shuffle, permutation _shuffle, int _length);
 
 #endif //CARDS_H
